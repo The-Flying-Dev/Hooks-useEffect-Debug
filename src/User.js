@@ -2,9 +2,9 @@ import { useHistory } from 'react-router-dom';
 
 const User = (props) => {
   const history = useHistory();
-  const { name, email, picture, location } = props.data;
+  const { id, name, email, picture, location } = props.data;
   return (
-    <div className='render-wrapper' key={email}>
+    <div className='render-wrapper' key={id.value}>
       <img src={picture.large} alt={email} />
       <p>
         <span className='name'>
